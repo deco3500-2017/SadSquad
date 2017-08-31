@@ -1,6 +1,5 @@
-# SadSquad
-# DECO3500 Proposal
-# StudyHub
+# SadSquad Proposal
+## StudyHub
 
 
 ## Introduction: 
@@ -66,13 +65,17 @@ Resources: Modify the design on Balsamiq.
 
 ### Construction Phase:
 Key deliverables:To be completed by the 27th of October. Construct the application based on the re-adjusted design and run tests to make sure the application works. 
-Resources: (insert softwares that we use?)
+Resources: Illustrator, Photoshop, online websites and services, Balsamiq 
 
 ## Tags
 Social Translucence
+
 Shared Information Space
+
 Persuasive Computing
+
 Ubiquitous Computing 
+
 Collaboration 
 
 ## Keywords Related to Domain
