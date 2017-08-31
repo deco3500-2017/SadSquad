@@ -1,9 +1,9 @@
 # SadSquad
-#DECO3500 Proposal
-#StudyHub
+# DECO3500 Proposal
+# StudyHub
 
 
-##Introduction 
+## Introduction 
 What is your project and what dilemma does it aim to address.
 
 Main Topics for Introduction: 
@@ -13,7 +13,7 @@ Main Topics for Introduction:
 - Many, many different resources (Slack, Piazza, Trello, Github, UQ Attic, Blackboard Discussion, Fb Groups)  
 
 
-##Concept
+## Concept
 
 
 StudyHub is every student's best friend. StudyHub is a centralised place of learning for students studying at university or higher education. StudyHub facilitates collaboration and discussion amongst university peers. From StudyHub users can easily access external resources from different platforms that they have already signed up to such as: Slack, Piazza, UQ Attic, GitHub, Trello and many more. StudyHub is also a perfect place for students to privately work on group assignments together. 
@@ -37,7 +37,7 @@ Zach will be responsible for the logistics, particularly bringing the equipment 
 If a team member is performing poorly, such as not completing their assigned work for the week, initially we will talk about it in the next team meeting. From there, if the lack of work persists, then we will try to talk to them individually about the lack of effort. If a group member is still not performing to an adequate standard; we will contact Lorna and potentially ask to initiate a peer assessment.
 
 
-##Communications
+## Communications
 
 
 In-person communication will occur during our workshop hours every Tuesday from 12pm to 2pm. In order to ensure every group member has a chance to speak and have input towards the project, a team meeting will be held at the start of each workshop. The meeting length will depend on how much needs to be discussed in terms of progress, ideas, brainstorming, and any issues members of the team have encountered.
@@ -47,7 +47,7 @@ For communication outside of meetings, the team will use both the Facebook group
 Files will be named according to the assessment it is required for. Files will be named according to the assessment piece and file version; if the file is part of a github submission. 
 
 
-##Plan
+## Plan
 Identify the key tasks that need to be completed and when. 
 Identify: 
 • Project phases e.g. research; requirements; design; construction; 
