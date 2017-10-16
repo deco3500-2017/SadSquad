@@ -24,7 +24,7 @@
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item active" href="#">DECO3500</a>
-                            <a class="dropdown-item" href="#">CSSE2002</a>
+                            <a class="dropdown-item" id="runTopic" href="#">CSSE2002</a>
                             <a class="dropdown-item" href="#">MATH1061</a>
                             <a class="dropdown-item" href="#">DECO2800</a>
                         </div>
@@ -43,7 +43,11 @@
 
 
             <div class="chat">
-
+                <div class="topic">
+                    <h5>Current Topic: <span>Assignment 2 - Questions 1-3 </span><em> (7pm - 9pm)</em></h5>
+                    <p>Discuss solutions, resources and helpful tips.</p>
+                    <strong>Reminder: plagiarism will be reported to the university.</strong>
+                </div>
                 <div class="messageArea row">
 
                 </div>
@@ -57,15 +61,149 @@
             </div>
 
             <div class="filter">
-                <h3>Filters:</h3>
-                <button id="filterBtn" class="btn btn-1 btn-block" type="button">General Chat:</button>
+                <h3>Study Sessions:</h3>
+                <!-- <button id="filterBtn" class="btn btn-1 btn-block" type="button">General Chat:</button>
                 <button id="filterBtn" class="btn btn-2 btn-block" type="button">Assignments:</button>
                 <button id="filterBtn" class="btn btn-3 btn-block" type="button">Tutorials:</button>
-                <button id="filterBtn" class="btn btn-3 btn-block" type="button">Practicals:</button>
-                
+                <button id="filterBtn" class="btn btn-3 btn-block" type="button">Practicals:</button> -->
+                <button data-toggle="modal" data-target="#prevStudyModal" class="btn btn-primary text-center">Previous Study Sessions</button>
+                <button data-toggle="modal" data-target="#studyModal" class="btn btn-danger text-center">Create Study Session</button>
+
+                <div class="upcomingSessions">
+                    <h3>Upcoming Sessions:</h3>
+                    <div class="session">
+                        Final Exam Study
+                        <p>18/11 - 2pm - 78-227</p>
+                        <!-- <br> -->
+                        <button class="joinOtherSessionBtn btn btn-primary btn-block">Join</button>
+                        <p class="peopleGoing">John Kossack, Peter Hendricks and 8 more people...</p>
+                    </div>
+                </div>
             </div>
 
-            
+            <!-- PAST STUDY SESSIONS MODAL-->
+            <div class="modal fade" id="prevStudyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Past Study Sessions:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="prevStudySesh">
+                                <h4>Mid Sem Late Night Study</h4>
+
+                                    <!-- STAR RATING SYSTEM -->
+                                    <!-- Rating Stars Box -->
+                                    <div class='rating-stars text-center'>
+                                        <ul id='stars'>
+                                            <li class='star' title='Poor' data-value='1'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Fair' data-value='2'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Good' data-value='3'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Excellent' data-value='4'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='WOW!!!' data-value='5'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- STAR RATING SYSTEM -->
+                                <p class="prevStudyMemberinos">You Studied With: <strong class="prevStudyStrong">Jerry Sanchez</strong>, <strong class="prevStudyStrong">Petra Petridish</strong>, <strong class="prevStudyStrong">Henry Hubbins</strong>, <strong class="prevStudyStrong">Alberto Basilinko</strong></p>
+                                <span>Click a name to +1 them!</span>
+                            </div>
+                            <div class="prevStudySesh">
+                                <h4>Study Review</h4>
+
+                                    <!-- STAR RATING SYSTEM -->
+                                    <!-- Rating Stars Box -->
+                                    <div class='rating-stars text-center'>
+                                        <ul id='stars'>
+                                            <li class='star' title='Poor' data-value='1'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Fair' data-value='2'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Good' data-value='3'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='Excellent' data-value='4'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                            <li class='star' title='WOW!!!' data-value='5'>
+                                                <i class='fa fa-star fa-fw'></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- STAR RATING SYSTEM -->
+                                <p class="prevStudyMembers">You Studied With: <strong class="prevStudyStrong">Roe Rogane</strong>,<strong class="prevStudyStrong"> James Peterson</strong></p>
+                                <span>Click a name to +1 them!</span>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal For creating study session-->
+            <div class="modal fade" id="studyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create Study Session:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            Name your study session:
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1"> <i class="fa fa-users"></i> </span>
+                                <input type="text" class="studyName form-control" placeholder="Study Session Name" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <br>
+                            <label for="basic-url">Date, Time, Location:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3"> <i class="fa fa-calendar"></i> </span>
+                                <input type="text" placeholder="dd/mm" class="studyDate form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"> <i class="fa fa-clock-o"></i> </span>
+                                <input type="text" placeholder="Time (am/pm)" class="studyTime form-control" aria-label="">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"> <i class="fa fa-compass"></i> </span>
+                                <input type="text" placeholder="Building - Room number" class="studyLocation form-control" aria-label="">
+                            </div>
+                            <br>
+                            Topics:
+                            <div class="input-group">
+                                <span class="input-group-addon"> <i class="fa fa-book"></i> </span>
+                                <input type="text" class="form-control" placeholder="List topics (separated by commas)">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button id="createStudySave" type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
       
