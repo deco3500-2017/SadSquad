@@ -16,10 +16,23 @@ $(document).ready(function(){
     // AUTOMATIC MESSAGES
     setTimeout(function() {
         
-        writeMessage("hey", false);
+        writeMessage("Hey guys, for question 3? What do they mean by abelian group?", false);
         $("#messageTextarea").val("");
     
     }, 900);
+    setTimeout(function () {
+        
+        writeMessage("The rational numbers together with addition and multiplication form a field which contains the integers and is contained in any field containing the integers. Finite extensions of Q are called algebraic number fields, and the algebraic closure of Q is the field of algebraic numbers.", false);
+        $("#messageTextarea").val("");
+        
+    }, 3000);
+    setTimeout(function() {
+        
+        writeMessage("Try out this link: https://www.youtube.com/watch?v=-ygExIZm7Wo", false);
+        $("#messageTextarea").val("");
+    
+    }, 5000);
+    
     
     // FUNCTION FOR WRITING MESSAGES IN THE CHAT
     function writeMessage(message, outbound){
