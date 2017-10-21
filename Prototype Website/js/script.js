@@ -16,35 +16,32 @@ $(document).ready(function(){
     // AUTOMATIC MESSAGES
     setTimeout(function() {
         
-        writeMessage("Hey guys, for question 3? What do they mean by abelian group?", false);
-        $("#messageTextarea").val("");
+        writeMessage("Hey guys, for question 3? What do they mean by abelian group?", false, "James McAttack", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp64T_LR0_rksRp4Gd7rlJoZ0is8J5I55duxDRKJXwbRh6ztQN");
     
     }, 900);
     setTimeout(function () {
         
-        writeMessage("The rational numbers together with addition and multiplication form a field which contains the integers and is contained in any field containing the integers. Finite extensions of Q are called algebraic number fields, and the algebraic closure of Q is the field of algebraic numbers.", false);
-        $("#messageTextarea").val("");
+        writeMessage("The rational numbers together with addition and multiplication form a field which contains the integers and is contained in any field containing the integers. Finite extensions of Q are called algebraic number fields, and the algebraic closure of Q is the field of algebraic numbers.", false, "Devon Diddle", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnIMcGE1Gg6DtI4WFw7fnPk8VPyc1TTtm00IZn3HVGjrEx1cvzw");
         
     }, 3000);
     setTimeout(function() {
         
-        writeMessage("Try out this link: https://www.youtube.com/watch?v=-ygExIZm7Wo", false);
-        $("#messageTextarea").val("");
+        writeMessage("Try out this link: https://www.youtube.com/watch?v=-ygExIZm7Wo", false, "Mary Jone", "http://i.dailymail.co.uk/i/pix/2013/06/20/article-2344754-1A68DC59000005DC-223_306x423.jpg");
     
     }, 5000);
     
     
     // FUNCTION FOR WRITING MESSAGES IN THE CHAT
-    function writeMessage(message, outbound){
+    function writeMessage(message, outbound, name, imgLink){
         
         // time
         var now = new Date($.now());
         var nowFormatted = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
         //append 
         if (outbound){
-            $(".messageArea").append("<h5 class='outbound message'>" + message  +"<br><span class='timestamp'>" + nowFormatted + "</span>" + "</h5>")
+            $(".messageArea").append("<div><p class='msgName msgOut'>Me</p><h5 class='outbound message'>" + "<img class='profilePhoto imgOut' src='http://i.dailymail.co.uk/i/pix/2017/02/09/00/3CFA6FAB00000578-0-image-a-1_1486600326530.jpg'>" + message + "<br><span class='timestamp'>" + nowFormatted + "</span>" + "</h5></div>")
         } else{
-            $(".messageArea").append("<h5 class='inbound message'>" + message + "<p class='plusOne'>+1</p>" +"<br><span class='timestamp'>" + nowFormatted + "</span>" + "</h5>")
+            $(".messageArea").append("<div><p class='msgName msgIn'>"+name+"</p><h5 class='inbound message'>" + "<img class='profilePhoto imgIn' src='"+imgLink+"'>"+ message + "<p class='plusOne'>+1</p>" +"<br><span class='timestamp'>" + nowFormatted + "</span>" + "</h5></div>")
         }
     }
     
@@ -217,6 +214,12 @@ $(document).ready(function(){
     $("body").on("click", ".plusOne", function(){
         $(this).parent().css({border:"1px solid blue"});
         $(this).css({opacity:"1"});
+        var name = $(this).parent().siblings(".msgName").text();
+        var photosrc = $(this).siblings(".imgIn").attr("src");
+        var message = $(this).parent().text().split("+")[0];
+        var time = $(this).parent().text().split("+1")[1]
+        // console.log(time);
+        $(".hereIs").append("<div><p class='msgIn msgName'>" + name +"</p><h5 class='inbound message'><img class='profilePhoto imgIn' src="+ photosrc+">"+message+"<br><span class='timestamp'>"+time+"</span></h5></div>")
     })
 
     $("#runTopic").click(function(){
