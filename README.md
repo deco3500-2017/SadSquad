@@ -4,7 +4,7 @@
 
 
 # Prototype: 
-https://github.com/deco3500-2017/SadSquad.git
+https://zach97m.github.io/index.html
 
 
 # Additional Promotional Material: 
