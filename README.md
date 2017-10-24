@@ -17,6 +17,7 @@ https://drive.google.com/file/d/0B94otuxunxRrS0RiV0kyM3BBbzg/view
 https://youtu.be/rmNRc6WJ3uU
 
 ## Creative Pitch
+https://drive.google.com/file/d/0B94otuxunxRrR2pwa1lJVTJ5TDg/view?usp=sharing
 
 # Process Documentation: 
 
