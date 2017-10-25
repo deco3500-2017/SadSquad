@@ -435,7 +435,8 @@
     max-width: 800px;
 }
 .logo{
-    width: 70%;
+    max-width: 150px;
+    width: 100%;
     position: absolute;
     bottom: 20px;
 }
