@@ -434,3 +434,8 @@
 .modal-dialog{
     max-width: 800px;
 }
+.logo{
+    width: 70%;
+    position: absolute;
+    bottom: 20px;
+}
