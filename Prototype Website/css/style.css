@@ -4,7 +4,7 @@
 }
 .pageNav{
     float: left;
-    background-color: #6B3588;
+    background-color: #5173C0;
     width: 150px;
     height: 90vh;
     margin: 0;
@@ -28,7 +28,7 @@
     height: 10vh;
     margin: 0;
     width: 150px;
-    background-color: blue;
+    background-color: #354C7C;
     color: white;
 }
 .messageArea{
@@ -167,14 +167,14 @@
 /* GROUPS.HTML */
 
 .groupsChat{
-    width: 45%;
+    width: 55%;
     padding: 0;
     float: left;
     position: relative;
     height: 100vh;
 }
 .groupsSideBar{
-    width: 40%;
+    width: 30%;
     background-color: #5173C0;
     height: 100vh;
     float: left;
@@ -186,7 +186,9 @@
     color: white;
 }
 
+.otherStuff{
 
+}
 
 .taskDelegation{
     height: 70%;

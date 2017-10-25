@@ -226,6 +226,12 @@ $(document).ready(function(){
         $(".topic").show();
     })
 
+    $(".taskDelegation").hide();
+
+    $("#taskDel").click(function(){
+        $(".otherStuff").hide();
+        $(".taskDelegation").show(500);
+    })
 
 
 }) // end doc ready
